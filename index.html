@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Financeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Análise Financeira</h1>
+        <form id="finance-form">
+            <div>
+                <h3>Ativos circulantes</h3>
+            </div>
+            <div class="flex header">
+                <p class="centro">2023</p>
+                <p class="centro">2022</p>
+            </div>
+            <div class="form-group">
+                <label for="ativoTotal">Ativo Total</label>
+                <div class="form-group flex">
+                    <input type="number" id="ativoTotal" name="ativoTotal" required value="1050888">
+                    <input type="number" id="ativoTotal2" name="ativoTotal2" required aria-label="ativoTotal2" value="976709">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ativoCirculante">Ativo Circulante</label>
+                <div class="form-group flex">
+                    <input type="number" id="ativoCirculante" name="ativoCirculante" required value="157079">
+                    <input type="number" id="ativoCirculante2" name="ativoCirculante2" required aria-label="ativoCirculante2" value="163052">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="caixa">Caixa</label>
+                <div class="form-group flex">
+                    <input type="number" id="caixa" name="caixa" required value="61613">
+                    <input type="number" id="caixa2" name="caixa2" required aria-label="Caixa 2" value="41723">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="titulosEValoresAtiv">Titulos e valores</label>
+                <div class="flex">
+                    <input type="number" id="titulosEValoresAtiv" name="titulosEValoresAtiv" required value="13650">
+                    <input type="number" id="titulosEValoresAtiv2" name="titulosEValoresAtiv2" required aria-label="titulosEValoresAtiv2" value="14470">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ContasAReceAtiv">Contas a receber</label>
+                <div class="flex">
+                    <input type="number" id="ContasAReceAtiv" name="ContasAReceAtiv" required value="29702">
+                    <input type="number" id="ContasAReceAtiv2" name="ContasAReceAtiv2" required aria-label="ContasAReceAtiv2" value="26142">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="estoqueAtivo">Estoques</label>
+                <div class="flex">
+                    <input type="number" id="estoqueAtivo" name="estoqueAtivo" required value="37184">
+                    <input type="number" id="estoqueAtivo2" name="estoqueAtivo2" required aria-label="estoqueAtivo" value="45804">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="impostosContriAtivo">Impostos e contribuições</label>
+                <div class="flex">
+                    <input type="number" id="impostosContriAtivo" name="impostosContriAtivo" required value="5703">
+                    <input type="number" id="impostosContriAtivo2" name="impostosContriAtivo2" required aria-label="impostosContriAtivo2" value="6819">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ativosParaVenda">Ativos mantidos para venda</label>
+                <div class="flex">
+                    <input type="number" id="ativosParaVenda" name="ativosParaVenda" required value="1624">
+                    <input type="number" id="ativosParaVenda2" name="ativosParaVenda2" required aria-label="ativosParaVenda2" value="18823">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ativosCirc">Outros ativos circulantes</label>
+                <div class="flex">
+                    <input type="number" id="ativosCirc" name="ativosCirc" required value="7603">
+                    <input type="number" id="ativosCirc2" name="ativosCirc2" required aria-label="ativosCirc2" value="9271">
+                </div>
+            </div>
+            <div>
+                <h3>Ativos Não Circulantes</h3>
+            </div>
+            <div class="form-group">
+                <label for="ativosNaoCirculantes">Ativos Não circulantes</label>
+                <div class="form-group flex">
+                    <input type="number" id="ativosNaoCirculantes" name="ativosNaoCirculantes" required value="893809">
+                    <input type="number" id="ativosNaoCirculantes2" name="ativosNaoCirculantes2" required aria-label="ativosNaoCirculantes2" value="813657">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="realizavelLP">Realizável a longo prazo</label>
+                <div class="form-group flex">
+                    <input type="number" id="realizavelLP" name="realizavelLP" required value="129735">
+                    <input type="number" id="realizavelLP2" name="realizavelLP2" required aria-label="realizavelLP2" value="110722">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contasARece">Contas a receber (líquidas)</label>
+                <div class="form-group flex">
+                    <input type="number" id="contasARece" name="contasARece" required value="8942">
+                    <input type="number" id="contasARece2" name="contasARece2" required aria-label="contasARece2" value="12729">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="titulosEVal">Títulos e valores mobiliários</label>
+                <div class="form-group flex">
+                    <input type="number" id="titulosEVal" name="titulosEVal" required value="11661">
+                    <input type="number" id="titulosEVal2" name="titulosEVal2" required aria-label="titulosEVal2" value="8159">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="depositosJudic">Depósitos judiciais</label>
+                <div class="form-group flex">
+                    <input type="number" id="depositosJudic" name="depositosJudic" required value="71390">
+                    <input type="number" id="depositosJudic2" name="depositosJudic2" required aria-label="depositosJudic2" value="57671">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="impostoRenda">Imposto de renda e contribuição social diferidos</label>
+                <div class="form-group flex">
+                    <input type="number" id="impostoRenda" name="impostoRenda" required value="4672">
+                    <input type="number" id="impostoRenda2" name="impostoRenda2" required aria-label="impostoRenda2" value="4342">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="impostosContri">Impostos e contribuições</label>
+                <div class="form-group flex">
+                    <input type="number" id="impostosContri" name="impostosContri" required value="21861">
+                    <input type="number" id="impostosContri2" name="impostosContri2" required aria-label="impostosContri2" value="19715">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="outrosAtivos">Outros ativos realizáveis a longo prazo</label>
+                <div class="form-group flex">
+                    <input type="number" id="outrosAtivos" name="outrosAtivos" required value="11209">
+                    <input type="number" id="outrosAtivos2" name="outrosAtivos2" required aria-label="outrosAtivos2" value="8106">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="investimenosLP">Investimentos</label>
+                <div class="form-group flex">
+                    <input type="number" id="investimenosLP" name="investimenosLP" required value="6574">
+                    <input type="number" id="investimenosLP2" name="investimenosLP2" required aria-label="investimenosLP2" value="8172">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="imobilizado">Imobilizado</label>
+                <div class="form-group flex">
+                    <input type="number" id="imobilizado" name="imobilizado" required value="742774">
+                    <input type="number" id="imobilizado2" name="imobilizado2" required aria-label="imobilizado2" value="679182">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="intangivel">Intangível</label>
+                <div class="form-group flex">
+                    <input type="number" id="intangivel" name="intangivel" required value="14726">
+                    <input type="number" id="intangivel2" name="intangivel2" required aria-label="intangivel2" value="15581">
+                </div>
+            </div>
+            <div>
+                <h3>Passivo circulante</h3>
+            </div>
+            <div class="flex header">
+                <p class="centro">2023</p>
+                <p class="centro">2022</p>
+            </div>
+            <div class="form-group">
+                <label for="passivoTotal">Passivo Total</label>
+                <div class="form-group flex">
+                    <input type="number" id="passivoTotal" name="passivoTotal" required value="1050888">
+                    <input type="number" id="passivoTotal2" name="passivoTotal2" required aria-label="passivoTotal2" value="976709">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="passivoCirculante">Passivo Circulante</label>
+                <div class="form-group flex">
+                    <input type="number" id="passivoCirculante" name="passivoCirculante" required value="163928">
+                    <input type="number" id="passivoCirculante2" name="passivoCirculante2" required aria-label="passivoCirculante2" value="163731">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fornecedores">Fornecedores</label>
+                <div class="form-group flex">
+                    <input type="number" id="fornecedores" name="fornecedores" required value="23302">
+                    <input type="number" id="fornecedores2" name="fornecedores2" required aria-label="fornecedores2" value="28507">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="financiamentos">Financiamentos</label>
+                <div class="form-group flex">
+                    <input type="number" id="financiamentos" name="financiamentos" required value="20923">
+                    <input type="number" id="financiamentos2" name="financiamentos2" required aria-label="financiamentos2" value="18656">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="arrendamentos">Arrendamentos</label>
+                <div class="form-group flex">
+                    <input type="number" id="arrendamentos" name="arrendamentos" required value="34858">
+                    <input type="number" id="arrendamentos2" name="arrendamentos2" required aria-label="arrendamentos2" value="28994">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="impostosContriPassivo">Impostos e contribuições</label>
+                <div class="form-group flex">
+                    <input type="number" id="impostosContriPassivo" name="impostosContriPassivo" required value="26463">
+                    <input type="number" id="impostosContriPassivo2" name="impostosContriPassivo2" required aria-label="impostosContriPassivo2" value="30951">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="dividendosPropostos">Dividendos propostos</label>
+                <div class="form-group flex">
+                    <input type="number" id="dividendosPropostos" name="dividendosPropostos" required value="17134">
+                    <input type="number" id="dividendosPropostos2" name="dividendosPropostos2" required aria-label="dividendosPropostos2" value="21762">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="provisaoDesmantelamento">Provisão para desmantelamento de áreas</label>
+                <div class="form-group flex">
+                    <input type="number" id="provisaoDesmantelamento" name="provisaoDesmantelamento" required value="9837">
+                    <input type="number" id="provisaoDesmantelamento2" name="provisaoDesmantelamento2" required aria-label="provisaoDesmantelamento2" value="0">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="beneficiosEmpregados">Benefícios a empregados</label>
+                <div class="form-group flex">
+                    <input type="number" id="beneficiosEmpregados" name="beneficiosEmpregados" required value="14194">
+                    <input type="number" id="beneficiosEmpregados2" name="beneficiosEmpregados2" required aria-label="beneficiosEmpregados2" value="11555">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="passivosAssociados">Passivos associados a ativos mantidos para venda</label>
+                <div class="form-group flex">
+                    <input type="number" id="passivosAssociados" name="passivosAssociados" required value="2621">
+                    <input type="number" id="passivosAssociados2" name="passivosAssociados2" required aria-label="passivosAssociados2" value="7646">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="outrasContas">Outras contas e despesas a pagar</label>
+                <div class="form-group flex">
+                    <input type="number" id="outrasContas" name="outrasContas" required value="14596">
+                    <input type="number" id="outrasContas2" name="outrasContas2" required aria-label="outrasContas2" value="15660">
+                </div>
+            </div>
+            <div>
+                <h3>Passivo não circulante</h3>
+            </div>
+            <div class="form-group">
+                <label for="passivoNaoCirculante">Passivo Não circulante</label>
+                <div class="form-group flex">
+                    <input type="number" id="passivoNaoCirculante" name="passivoNaoCirculante" required value="504620">
+                    <input type="number" id="passivoNaoCirculante2" name="passivoNaoCirculante2" required aria-label="passivoNaoCirculante2" value="448593">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="financiamentosLP">Financiamentos</label>
+                <div class="form-group flex">
+                    <input type="number" id="financiamentosLP" name="financiamentosLP" required value="118508">
+                    <input type="number" id="financiamentosLP2" name="financiamentosLP2" required aria-label="financiamentosLP2" value="137630">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="arrendamentosLP">Arrendamentos</label>
+                <div class="form-group flex">
+                    <input type="number" id="arrendamentosLP" name="arrendamentosLP" required value="128773">
+                    <input type="number" id="arrendamentosLP2" name="arrendamentosLP2" required aria-label="arrendamentosLP2" value="95423">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="impostoRendaLP">Imposto de renda e contribuição social correntes</label>
+                <div class="form-group flex">
+                    <input type="number" id="impostoRendaLP" name="impostoRendaLP" required value="1446">
+                    <input type="number" id="impostoRendaLP2" name="impostoRendaLP2" required aria-label="impostoRendaLP2" value="1578">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="impostoRendaLPdiferidos">Imposto de renda e contribuição social diferidos</label>
+                <div class="form-group flex">
+                    <input type="number" id="impostoRendaLPdiferidos" name="impostoRendaLPdiferidos" required value="52820">
+                    <input type="number" id="impostoRendaLPdiferidos2" name="impostoRendaLPdiferidos2" required aria-label="impostoRendaLPdiferidos2" value="35220">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="beneficiosEmpregadosLP">Benefícios a empregados</label>
+                <div class="form-group flex">
+                    <input type="number" id="beneficiosEmpregadosLP" name="beneficiosEmpregadosLP" required value="75421">
+                    <input type="number" id="beneficiosEmpregadosLP2" name="beneficiosEmpregadosLP2" required aria-label="beneficiosEmpregadosLP2" value="55701">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="provisaoProcessosJudiciais">Provisão para processos judiciais e administrativos</label>
+                <div class="form-group flex">
+                    <input type="number" id="provisaoProcessosJudiciais" name="provisaoProcessosJudiciais" required value="16000">
+                    <input type="number" id="provisaoProcessosJudiciais2" name="provisaoProcessosJudiciais2" required aria-label="provisaoProcessosJudiciais2" value="15703">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="provisaoDesmantelamentoLP">Provisão para desmantelamento de áreas</label>
+                <div class="form-group flex">
+                    <input type="number" id="provisaoDesmantelamentoLP" name="provisaoDesmantelamentoLP" required value="102493">
+                    <input type="number" id="provisaoDesmantelamentoLP2" name="provisaoDesmantelamentoLP2" required aria-label="provisaoDesmantelamentoLP2" value="97048">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="outrasContasLP">Outras contas e despesas a pagar</label>
+                <div class="form-group flex">
+                    <input type="number" id="outrasContasLP" name="outrasContasLP" required value="9159">
+                    <input type="number" id="outrasContasLP2" name="outrasContasLP2" required aria-label="outrasContasLP2" value="10290">
+                </div>
+            </div>
+            <div>
+                <h3>Patrimônio Líquido</h3>
+            </div>
+            <div class="form-group">
+                <label for="patrimonioLiquido">Total Patrimônio Líquido</label>
+                <div class="form-group flex">
+                    <input type="number" id="patrimonioLiquido" name="patrimonioLiquido" required value="382340">
+                    <input type="number" id="patrimonioLiquido2" name="patrimonioLiquido2" required aria-label="patrimonioLiquido2" value="364385">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="capitalSubscrito">Capital subscrito e integralizado</label>
+                <div class="form-group flex">
+                    <input type="number" id="capitalSubscrito" name="capitalSubscrito" required value="205432">
+                    <input type="number" id="capitalSubscrito2" name="capitalSubscrito2" required aria-label="capitalSubscrito2" value="205432">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="reservaCapital">Reserva de capital, transações de capital e ações em tesouraria</label>
+                <div class="form-group flex">
+                    <input type="number" id="reservaCapital" name="reservaCapital" required value="-538">
+                    <input type="number" id="reservaCapital2" name="reservaCapital2" required aria-label="reservaCapital2" value="3102">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="reservaLucros">Reservas de lucros</label>
+                <div class="form-group flex">
+                    <input type="number" id="reservaLucros" name="reservaLucros" required value="159171">
+                    <input type="number" id="reservaLucros2" name="reservaLucros2" required aria-label="reservaLucros2" value="128562">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="resultadosAbrangentes">Outros resultados abrangentes</label>
+                <div class="form-group flex">
+                    <input type="number" id="resultadosAbrangentes" name="resultadosAbrangentes" required value="16376">
+                    <input type="number" id="resultadosAbrangentes2" name="resultadosAbrangentes2" required aria-label="resultadosAbrangentes2" value="25498">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="acionistasNaoControl">Participação dos acionistas não controladores</label>
+                <div class="form-group flex">
+                    <input type="number" id="acionistasNaoControl" name="acionistasNaoControl" required value="1899">
+                    <input type="number" id="acionistasNaoControl2" name="acionistasNaoControl2" required aria-label="acionistasNaoControl2" value="1791">
+                </div>
+            </div>
+            <h3>Itens DRE para Cálculo dos Índices</h3>
+            <div class="form-group">
+                <label for="vendasLiquidas">Vendas Líquidas</label>
+                <div class="form-group flex">
+                    <input type="number" id="vendasLiquidas" name="vendasLiquidas" required value="511994">
+                    <input type="number" id="vendasLiquidas2" name="vendasLiquidas2" required aria-label="vendasLiquidas2" value="641256">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="custoBens">Custo de bens vendidos</label>
+                <div class="form-group flex">
+                    <input type="number" id="custoBens" name="custoBens" required value="-242061">
+                    <input type="number" id="custoBens2" name="custoBens2" required aria-label="custoBens2" value="-307156">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lucroLiquido">Lucro Líquido</label>
+                <div class="form-group flex">
+                    <input type="number" id="lucroLiquido" name="lucroLiquido" required value="125166">
+                    <input type="number" id="lucroLiquido2" name="lucroLiquido2" required aria-label="lucroLiquido2" value="189005">
+                </div>
+            </div>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Este projeto visa desenvolver um sistema capaz de receber vários dados do usuário referente ao balanço patrimonial da empresa Petrobras, e realizar os cálculos de análises vertical e horizontal.
